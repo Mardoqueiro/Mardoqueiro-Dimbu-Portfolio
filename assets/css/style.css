@@ -3,6 +3,11 @@
     /**
      * colors
      */
+
+     --bg-color: #0A0F24;
+     --second-bg-color: #17182E;
+     --text-color: #F9F2F2;
+     --main-color: #F5CB86;
   
     /* gradient */
   
@@ -1468,7 +1473,7 @@
   
   
     /**
-     * #RESUME
+     * #RESUME/ Education & Experience
      */
   
     .timeline-list { margin-left: 65px; }
@@ -1857,7 +1862,7 @@
   
   
     /**
-       * RESUME
+       * RESUME / Education & Experience
        */
   
     .timeline-text { max-width: 700px; }
