@@ -350,10 +350,10 @@
     
               <ul class="project-list">
     
-                <li class="project-item  active" data-filter-item data-category="techical skills">
+                <!-- <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
     
-                    <figure class="project-img">    
+                    <figure class="skills-img">    
                       <img src="./assets/images/html-5.png" alt="finance" loading="lazy">
                     </figure>
     
@@ -362,72 +362,77 @@
                     <p class="project-category">Techical skills</p>
     
                   </a>
+                </li> -->
+
+
+                <li class="project-item active" data-filter-item data-category="techical skills">
+                  <a href="#">
+                    <div :key="skill.id" class="skill-badge">
+                    <figure class="skills-img">    
+                      <img src="./assets/images/html-5.png" loading="lazy" class="skill-image" :alt="skill.title">
+                    </figure>
+                  </div>
+                    <h3 class="project-title">HTML 5</h3>
+                    <p class="project-category">Techical skills</p>
+                  </a>
                 </li>
+
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/css-3.png" alt="finance" loading="lazy">
-                    </figure>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/css-3.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>
                     <h3 class="project-title">CSS</h3>
-    
                     <p class="project-category">Techical skills</p>
-    
                   </a>
                 </li>
 
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/js.png" alt="finance" loading="lazy">
-                    </figure>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/js.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>
                     <h3 class="project-title">JavaScript</h3>
-    
                     <p class="project-category">Techical skills</p>
-    
                   </a>
                 </li>
 
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/github.png" alt="finance" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">Git Hub</h3>
-    
-                    <p class="project-category">Techical skills</p>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="../assets/images/github.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>                    
+                    <h3 class="project-title">Git Hub</h3>    
+                    <p class="project-category">Techical skills</p>    
                   </a>
                 </li>
 
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/vue-js.png" alt="finance" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">Vue.Js 3</h3>
-    
-                    <p class="project-category">Techical skills</p>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/vue-js.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>    
+                    <h3 class="project-title">Vue.Js 3</h3>    
+                    <p class="project-category">Techical skills</p>    
                   </a>
                 </li>
                 
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/mysql.png" alt="finance" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">MySQL</h3>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/mysql.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>
+                    <h3 class="project-title">MySQL</h3>    
                     <p class="project-category">Techical skills</p>
     
                   </a>
@@ -435,13 +440,12 @@
 
                 <li class="project-item  active" data-filter-item data-category="techical skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/nodejs.png" alt="finance" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">Node.Js</h3>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/nodejs.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>    
+                    <h3 class="project-title">Node.Js</h3>    
                     <p class="project-category">Techical skills</p>
     
                   </a>
@@ -450,26 +454,24 @@
 
                 <li class="project-item  active" data-filter-item data-category="soft skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/ui.png" alt="task manager" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">UI/UX</h3>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/ui.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>
+                    <h3 class="project-title">UI/UX</h3>    
                     <p class="project-category">Soft skills</p>
     
                   </a>
                 </li>
                 <li class="project-item  active" data-filter-item data-category="soft skills">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/solution.png" alt="task manager" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">Problem Solving</h3>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/solution.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>
+                    <h3 class="project-title">Problem Solving</h3>    
                     <p class="project-category">Soft skills</p>
     
                   </a>
@@ -477,13 +479,12 @@
     
                 <li class="project-item  active" data-filter-item data-category="badges">
                   <a href="#">
-    
-                    <figure class="project-img">    
-                      <img src="./assets/images/operating-systems-basics.png" alt="orizon" loading="lazy">
-                    </figure>
-    
-                    <h3 class="project-title">Operating Systems Basics</h3>
-    
+                    <div :key="skill.id" class="skill-badge">
+                      <figure class="skills-img">    
+                        <img src="./assets/images/operating-systems-basics.png" loading="lazy" class="skill-image" :alt="skill.title">
+                      </figure>
+                    </div>    
+                    <h3 class="project-title">Operating Systems Basics</h3>    
                     <p class="project-category">Badges</p>
     
                   </a>
