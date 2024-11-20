@@ -111,7 +111,10 @@
   
   a { text-decoration: none; }
   
-  li { list-style: none; }
+  li { 
+    list-style: none; 
+    
+    }
   
   img, ion-icon, a, button, time, span { display: block; }
   
@@ -961,7 +964,10 @@
     margin-bottom: 10px;
   }
   
-  .project-item { display: none;  }
+  .project-item { 
+    display: none; 
+    margin: auto; 
+  }
   
   .project-item.active {
     display: block;
