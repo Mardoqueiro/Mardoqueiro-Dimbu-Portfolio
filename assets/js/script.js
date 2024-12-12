@@ -153,3 +153,39 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Modal functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.close');
+  const certificationItems = document.querySelectorAll('.clients-item img');
+
+  // Open modal when image is clicked
+  certificationItems.forEach(item => {
+      item.addEventListener('click', function() {
+          modal.style.display = 'flex';
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+      });
+  });
+
+  // Close modal when close button is clicked
+  closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.style.display === 'flex') {
+          modal.style.display = 'none';
+      }
+  });
+});
