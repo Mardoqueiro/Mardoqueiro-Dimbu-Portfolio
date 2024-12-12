@@ -259,17 +259,13 @@
   
   .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 
-
-
   .onscroll {
     border: 1px solid var(--jet);
-    /* width: 200px; */
     height: 600px;
     overflow: scroll;
+    
     }
 
-
-  
   .content-card {
     position: relative;
     background: var(--border-gradient-onyx);
