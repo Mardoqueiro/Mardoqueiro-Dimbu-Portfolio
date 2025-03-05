@@ -259,9 +259,9 @@
   
   .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 
-  .onscroll {
-    border: 1px solid var(--jet);
-    height: 590px;
+  .onscroll { 
+    border: 1px solid var(--jet); 
+    height: 600px;  /* size of the scroll section on education */
     overflow: scroll;
     
     }
