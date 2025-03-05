@@ -1,5 +1,5 @@
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+const elementToggleFunc = function (elem) { elem.classList.toggle("active");};
 
 
 
@@ -27,7 +27,7 @@ const modalText = document.querySelector("[data-modal-text]");
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+};
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
@@ -61,7 +61,7 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+  selectItems[i].addEventListener("click", function(){
 
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
@@ -88,7 +88,7 @@ const filterFunc = function (selectedValue) {
 
   }
 
-}
+};
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
