@@ -4,16 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mardoqueiro Resume</title>
+  <title>Mardoquéiro Dimbu - Full Stack Web Developer | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mardoquéiro Dimbu - Full Stack Web Developer specializing in Vue.js, Node.js, and modern web technologies. View my portfolio of web applications and development projects.">
+  <meta name="keywords" content="Full Stack Developer, Web Developer, Vue.js, Node.js, JavaScript, HTML, CSS, Portfolio, Cape Town">
+  <meta name="author" content="Mardoquéiro Dimbu">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mardoqueiro-portfolio.com/">
+  <meta property="og:title" content="Mardoquéiro Dimbu - Full Stack Web Developer">
+  <meta property="og:description" content="Full Stack Web Developer specializing in Vue.js, Node.js, and modern web technologies. View my portfolio and get in touch for collaboration opportunities.">
+  <meta property="og:image" content="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mardoqueiro-portfolio.com/">
+  <meta property="twitter:title" content="Mardoquéiro Dimbu - Full Stack Web Developer">
+  <meta property="twitter:description" content="Full Stack Web Developer specializing in Vue.js, Node.js, and modern web technologies.">
+  <meta property="twitter:image" content="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mardoquéiro Dimbu",
+    "jobTitle": "Full Stack Web Developer",
+    "url": "https://mardoqueiro-portfolio.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/mardoqu%C3%A9iro-dimbu-55b142283/",
+      "https://github.com/Mardoqueiro"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cape Town",
+      "addressCountry": "South Africa"
+    },
+    "email": "mordecai.dimbu@gmail.com",
+    "telephone": "+27695872540"
+  }
+  </script>
+  
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/MordecaiPortfolio4.img.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/projects/MordecaiPortfolio4.img.png">
+  <link rel="apple-touch-icon" href="./assets/images/projects/MordecaiPortfolio4.img.png">
 
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" as="style">
+  <link rel="preload" href="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png" as="image">
 
   <!--
     - google font link
@@ -28,87 +76,73 @@
     - #MAIN
   -->
 
-  <main>
+  <main role="main">
 
     <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar" data-sidebar role="complementary" aria-label="Personal information and contact details">
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
           <img src="https://mardoqueiro.github.io/all_images/Vue.EOMP/Portfolio.images/MordecaiPortfolio.png"
-            alt="Mardoqueiro Dimbu" width="90" loading="lazy">
+            alt="Professional headshot of Mardoquéiro Dimbu, Full Stack Web Developer" width="90" height="90" loading="eager">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Mardoqueiro Dimbu">Mardoqueiro Dimbu</h1>
+          <h1 class="name" title="Mardoquéiro Dimbu">Mardoquéiro Dimbu</h1>
 
           <p class="title">Full Stack Web developer</p>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false" aria-controls="sidebar-info-more" aria-label="Show contact information">
           <span>Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
         </button>
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="sidebar-info_more" id="sidebar-info-more">
 
         <div class="separator"></div>
 
-        <ul class="contacts-list">
+        <ul class="contacts-list" role="list">
 
-          <li class="contact-item">
+          <li class="contact-item" role="listitem">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:mordecai.dimbu@gmail.com" class="contact-link">mordecai.dimbu@gmail.com</a>
+              <a href="mailto:mordecai.dimbu@gmail.com" class="contact-link" aria-label="Send email to mordecai.dimbu@gmail.com">mordecai.dimbu@gmail.com</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <li class="contact-item" role="listitem">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+27695872540" class="contact-link">+27 69 587 2540</a>
+              <a href="tel:+27695872540" class="contact-link" aria-label="Call +27 69 587 2540">+27 69 587 2540</a>
             </div>
 
           </li>
 
-          <!-- <li class="contact-item">
-  
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-  
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-  
-                <time datetime="2004.01.15">15 January 2004</time>
-              </div>
-  
-            </li> -->
-
-          <li class="contact-item">
+          <li class="contact-item" role="listitem">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
             </div>
 
             <div class="contact-info">
@@ -123,17 +157,17 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list">
+        <ul class="social-list" role="list" aria-label="Social media links">
 
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/mardoqu%C3%A9iro-dimbu-55b142283/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
+          <li class="social-item" role="listitem">
+            <a href="https://www.linkedin.com/in/mardoqu%C3%A9iro-dimbu-55b142283/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+              <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="https://github.com/Mardoqueiro" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
+          <li class="social-item" role="listitem">
+            <a href="https://github.com/Mardoqueiro" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
             </a>
           </li>
 
@@ -153,7 +187,7 @@
       - #main-content
     -->
 
-    <div class="main-content">
+    <div class="main-content" role="main">
 
       <!--
           - #NAVBAR
@@ -161,22 +195,22 @@
 
       <nav class="navbar">
 
-        <ul class="navbar-list">
+        <ul class="navbar-list" role="menubar" aria-label="Main navigation">
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>About</button>
+          <li class="navbar-item" role="none">
+            <button class="navbar-link" data-nav-link role="menuitem" aria-label="Navigate to About section">About</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience-and-Education</button>
+          <li class="navbar-item" role="none">
+            <button class="navbar-link" data-nav-link role="menuitem" aria-label="Navigate to Experience and Education section">Experience-and-Education</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Project</button>
+          <li class="navbar-item" role="none">
+            <button class="navbar-link" data-nav-link role="menuitem" aria-label="Navigate to Projects section">Project</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+          <li class="navbar-item" role="none">
+            <button class="navbar-link" data-nav-link role="menuitem" aria-label="Navigate to Contact section">Contact</button>
           </li>
 
         </ul>
@@ -187,10 +221,10 @@
         - #ABOUT
       -->
 
-      <article class="about active" data-page="about">
+      <article class="about active" data-page="about" role="tabpanel" aria-labelledby="about-title">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" id="about-title">About me</h2>
         </header>
 
         <section class="about-text">
@@ -217,15 +251,14 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm doing</h3>
 
-          <ul class="service-list">
+          <ul class="service-list" role="list">
 
-            <li class="service-item">
+            <li class="service-item" role="listitem">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="Web design icon" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -238,10 +271,10 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" role="listitem">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -254,26 +287,10 @@
 
             </li>
 
-            <!-- <li class="service-item">
+            <li class="service-item" role="listitem">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li> -->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-photo.svg" alt="Video editing icon" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -285,10 +302,10 @@
               </div>
 
             </li>
-            <li class="service-item">
+            <li class="service-item" role="listitem">
 
               <div class="service-icon-box">
-                <img src="./assets/images/person-climbing-svgrepo-com.svg" alt="camera icon" width="40">
+                <img src="./assets/images/person-climbing-svgrepo-com.svg" alt="Rock climbing icon" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -312,32 +329,30 @@
 
         <section class="skill">
 
-          <!-- <h3 class="h3 skills-title">My skills</h3> -->
-
           <header>
             <h2 class="h2 article-title">My skills</h2>
           </header>
 
-          <ul class="skills-list content-card">
+          <div class="skills-list content-card">
 
             <section class="projects">
 
-              <ul class="filter-list">
+              <ul class="filter-list" role="tablist" aria-label="Skills filter">
 
-                <li class="filter-item">
-                  <button class="active" data-filter-btn>All</button>
+                <li class="filter-item" role="none">
+                  <button class="active" data-filter-btn role="tab" aria-selected="true" aria-controls="skills-grid">All</button>
                 </li>
 
-                <li class="filter-item">
-                  <button data-filter-btn>Techical skills</button>
+                <li class="filter-item" role="none">
+                  <button data-filter-btn role="tab" aria-selected="false" aria-controls="skills-grid">Technical skills</button>
                 </li>
 
-                <li class="filter-item">
-                  <button data-filter-btn>Soft skills</button>
+                <li class="filter-item" role="none">
+                  <button data-filter-btn role="tab" aria-selected="false" aria-controls="skills-grid">Soft skills</button>
                 </li>
 
-                <li class="filter-item">
-                  <button data-filter-btn>Badges</button>
+                <li class="filter-item" role="none">
+                  <button data-filter-btn role="tab" aria-selected="false" aria-controls="skills-grid">Badges</button>
                 </li>
 
               </ul>
@@ -349,27 +364,27 @@
                   <div class="select-value" data-selecct-value>Select category</div>
 
                   <div class="select-icon">
-                    <ion-icon name="chevron-down"></ion-icon>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                   </div>
 
                 </button>
 
-                <ul class="select-list">
+                <ul class="select-list" role="listbox">
 
-                  <li class="select-item">
-                    <button data-select-item>All</button>
+                  <li class="select-item" role="none">
+                    <button data-select-item role="option">All</button>
                   </li>
 
-                  <li class="select-item">
-                    <button data-select-item>Techical skills</button>
+                  <li class="select-item" role="none">
+                    <button data-select-item role="option">Technical skills</button>
                   </li>
 
-                  <li class="select-item">
-                    <button data-select-item>Soft skills</button>
+                  <li class="select-item" role="none">
+                    <button data-select-item role="option">Soft skills</button>
                   </li>
 
-                  <li class="select-item">
-                    <button data-select-item>Badges</button>
+                  <li class="select-item" role="none">
+                    <button data-select-item role="option">Badges</button>
                   </li>
 
                 </ul>
@@ -378,346 +393,221 @@
 
 
 
-              <ul class="project-list">
+              <ul class="project-list" id="skills-grid" role="grid" aria-label="Skills showcase">
 
-                <li class="project-item active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="HTML 5 skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/html-5.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/html-5.png" loading="lazy" class="skill-image" alt="HTML 5 logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">HTML 5</h3>
-                    <p class="project-category">Techical skills</p>
-                  </a>
+                    <p class="project-category">Technical skills</p>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="CSS skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/css-3.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/css-3.png" loading="lazy" class="skill-image" alt="CSS 3 logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">CSS</h3>
-                    <p class="project-category">Techical skills</p>
-                  </a>
+                    <p class="project-category">Technical skills</p>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="JavaScript skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/js.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/js.png" loading="lazy" class="skill-image" alt="JavaScript logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">JavaScript</h3>
-                    <p class="project-category">Techical skills</p>
-                  </a>
+                    <p class="project-category">Technical skills</p>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="GitHub skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="../assets/images/github.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/github.png" loading="lazy" class="skill-image" alt="GitHub logo" width="90" height="100">
                       </figure>
                     </div>
-                    <h3 class="project-title">Git Hub</h3>
-                    <p class="project-category">Techical skills</p>
-                  </a>
+                    <h3 class="project-title">GitHub</h3>
+                    <p class="project-category">Technical skills</p>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="Vue.js skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/vue-js.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/vue-js.png" loading="lazy" class="skill-image" alt="Vue.js logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">Vue.Js 3</h3>
-                    <p class="project-category">Techical skills</p>
-                  </a>
+                    <p class="project-category">Technical skills</p>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="MySQL skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/mysql.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/mysql.png" loading="lazy" class="skill-image" alt="MySQL logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">MySQL</h3>
-                    <p class="project-category">Techical skills</p>
+                    <p class="project-category">Technical skills</p>
 
-                  </a>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="Node.js skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/nodejs.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/nodejs.png" loading="lazy" class="skill-image" alt="Node.js logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">Node.Js</h3>
-                    <p class="project-category">Techical skills</p>
+                    <p class="project-category">Technical skills</p>
 
-                  </a>
+                  </div>
                 </li>
 
 
-                <li class="project-item  active" data-filter-item data-category="soft skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="soft skills" role="gridcell">
+                  <div role="img" aria-label="UI/UX skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/ui.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/ui.png" loading="lazy" class="skill-image" alt="UI/UX design icon" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">UI/UX</h3>
                     <p class="project-category">Soft skills</p>
 
-                  </a>
+                  </div>
                 </li>
-                <li class="project-item  active" data-filter-item data-category="soft skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="soft skills" role="gridcell">
+                  <div role="img" aria-label="Problem solving skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/solution.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/solution.png" loading="lazy" class="skill-image" alt="Problem solving icon" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">Problem Solving</h3>
                     <p class="project-category">Soft skills</p>
 
-                  </a>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="badges">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="badges" role="gridcell">
+                  <div role="img" aria-label="Operating Systems Basics badge">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/operating-systems-basics.png" loading="lazy" class="skill-image"
-                          :alt="skill.title">
+                        <img src="./assets/images/skills/operating-systems-basics.png" loading="lazy" class="skill-image" alt="Operating Systems Basics certification badge" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">OS Basics</h3>
-                    <!-- <h3 class="project-title">Basics</h3>     -->
                     <p class="project-category">Badges</p>
 
-                  </a>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="Figma skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/figma.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/figma.png" loading="lazy" class="skill-image" alt="Figma logo" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">Figma</h3>
-                    <p class="project-category">Techical skills</p>
+                    <p class="project-category">Technical skills</p>
 
-                  </a>
+                  </div>
                 </li>
 
-                <li class="project-item  active" data-filter-item data-category="techical skills">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="technical skills" role="gridcell">
+                  <div role="img" aria-label="Firebase skill">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/firebase_google_icon.png" loading="lazy" class="skill-image"
-                          :alt="skill.title">
+                        <img src="./assets/images/skills/firebase_google_icon.png" loading="lazy" class="skill-image" alt="Firebase logo" width="90" height="100">
                       </figure>
                     </div>
-                    <h3 class="project-title">Fire Base</h3>
-                    <p class="project-category">Techical skills</p>
+                    <h3 class="project-title">Firebase</h3>
+                    <p class="project-category">Technical skills</p>
 
-                  </a>
+                  </div>
                 </li>
-                <li class="project-item  active" data-filter-item data-category="badges">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="badges" role="gridcell">
+                  <div role="img" aria-label="Figma UI/UX badge">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/UIUX.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/UIUX.png" loading="lazy" class="skill-image" alt="Figma UI/UX certification badge" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">Figma UI/UX</h3>
                     <p class="project-category">Badges</p>
 
-                  </a>
+                  </div>
                 </li>
-                <li class="project-item  active" data-filter-item data-category="badges">
-                  <a href="#">
+                <li class="project-item active" data-filter-item data-category="badges" role="gridcell">
+                  <div role="img" aria-label="WordPress E-commerce badge">
                     <div :key="skill.id" class="skill-badge">
                       <figure class="skills-img">
-                        <img src="./assets/images/APIs.png" loading="lazy" class="skill-image" :alt="skill.title">
+                        <img src="./assets/images/skills/APIs.png" loading="lazy" class="skill-image" alt="WordPress E-commerce certification badge" width="90" height="100">
                       </figure>
                     </div>
                     <h3 class="project-title">WordPress Ecom</h3>
                     <p class="project-category">Badges</p>
 
-                  </a>
+                  </div>
                 </li>
 
               </ul>
 
             </section>
 
-            <!-- <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li> -->
-          </ul>
+          </div>
 
         </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
 
 
         <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+        <div class="modal-container" data-modal-container role="dialog" aria-hidden="true" aria-labelledby="modal-title">
 
-          <div class="overlay" data-overlay></div>
+          <div class="overlay" data-overlay aria-label="Close modal"></div>
 
           <section class="testimonials-modal">
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+            <button class="modal-close-btn" data-modal-close-btn aria-label="Close modal">
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="" alt="" width="80" data-modal-img loading="lazy">
               </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              <img src="./assets/images/icon-quote.svg" alt="Quote icon" loading="lazy">
             </div>
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <h4 class="h3 modal-title" id="modal-title" data-modal-title></h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+              <time datetime=""></time>
 
               <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
               </div>
 
             </div>
@@ -733,49 +623,49 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">Certifications</h3>
 
-          <ul class="clients-list has-scrollbar">
+          <ul class="clients-list has-scrollbar" role="list" aria-label="Professional certifications">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
+            <li class="clients-item" role="listitem">
+              <button type="button" aria-label="View Operating Systems Basics certification">
+                <img src="./assets/images/certification/Operating_Systems_Basics_certification.jpg" alt="Operating Systems Basics certification" loading="lazy" width="200" height="200">
+              </button>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
+            <li class="clients-item" role="listitem">
+              <button type="button" aria-label="View JavaScript Essentials 2 certification">
+                <img src="./assets/images/certification/JavaScript_Essentials_2_certification.jpg" alt="JavaScript Essentials 2 certification" loading="lazy" width="200" height="200">
+              </button>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
+            <li class="clients-item" role="listitem">
+              <button type="button" aria-label="View HubSpot SEO certification">
+                <img src="./assets/images/certification/HubSpotSEO_ll_certified.png" alt="HubSpot SEO Level 2 certification" loading="lazy" width="200" height="200">
+              </button>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
+            <li class="clients-item" role="listitem">
+              <button type="button" aria-label="View SEO certification">
+                <img src="./assets/images/certification/SEOCertified.png" alt="SEO certification" loading="lazy" width="200" height="200">
+              </button>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
+            <li class="clients-item" role="listitem">
+              <button type="button" aria-label="View Digital Marketing certification">
+                <img src="./assets/images/certification/DigitalMarketing2024.png" alt="Digital Marketing 2024 certification" loading="lazy" width="200" height="200">
+              </button>
             </li>
 
           </ul>
 
         </section>
+
+        <!-- Certification Modal -->
+        <div id="imageModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="cert-modal-title">
+          <span class="close" aria-label="Close certification modal">&times;</span>
+          <img class="modal-content" id="modalImage" alt="" loading="lazy">
+        </div>
 
       </article>
 
@@ -783,70 +673,68 @@
         - #Education & Experience
       -->
 
-      <article class="experience-and-education" data-page="experience-and-education">
+      <article class="experience-and-education" data-page="experience-and-education" role="tabpanel" aria-labelledby="experience-title">
 
         <header>
-          <h2 class="h2 ">Experience&</h2>
-          <h2 class="h2 article-title">Education</h2>
+          <h2 class="h2 article-title" id="experience-title">Experience & Education</h2>
         </header>
 
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list" role="list">
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
               
               <h4 class="h4 timeline-item-title">Solar MD - Software Development Intern</h4>
 
-              <span>January 2025 — March 2025</span>
+              <time datetime="2025-01">January 2025 — March 2025</time>
 
-              <p class="timeline-text"> &#x2022; Developed a modular JavaScript input form, structuring code into reusable components across multiple files.</p>
-              <p class="timeline-text"> &#x2022; Gained hands-on experience with HTML, CSS, and JavaScript in a real-world development environment.</p>
-              <p class="timeline-text"> &#x2022; Collaborated with senior developers to refine code structure and improve functionality.</p>
-              <p class="timeline-text"> &#x2022; Strengthened problem-solving skills by debugging and optimizing JavaScript code for better maintainability.</p>
+              <p class="timeline-text">• Developed a modular JavaScript input form, structuring code into reusable components across multiple files.</p>
+              <p class="timeline-text">• Gained hands-on experience with HTML, CSS, and JavaScript in a real-world development environment.</p>
+              <p class="timeline-text">• Collaborated with senior developers to refine code structure and improve functionality.</p>
+              <p class="timeline-text">• Strengthened problem-solving skills by debugging and optimizing JavaScript code for better maintainability.</p>
             </li>
 
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
 
               <h4 class="h4 timeline-item-title">LC STUDIO - Full-Stack Development Intern</h4>
 
-              <span>September 2024 — January 2025 </span>
+              <time datetime="2024-09">September 2024 — January 2025</time>
 
-              <p class="timeline-text"> &#x2022;Further expanding my technical skills in full-stack development with a
+              <p class="timeline-text">• Further expanding my technical skills in full-stack development with a
                 focus on modern web technologies and practices.</p>
 
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
 
               <h4 class="h4 timeline-item-title">House/Pet Sitter</h4>
 
-              <!-- <span>Mountain Club of South Africa National Community Convenor</span> -->
-              <span>2024 — 2024</span>
+              <time datetime="2024">2024 — 2024</time>
 
-              <p class="timeline-text"> &#x2022; Provided house and pet-sitting services, ensuring property and pets
+              <p class="timeline-text">• Provided house and pet-sitting services, ensuring property and pets
                 were well taken care of during the owner's absence.</p>
 
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
 
               <h4 class="h4 timeline-item-title">The Homestead Head Office - Office Assistant</h4>
 
-              <span>Feb 2024 — March 2024</span>
+              <time datetime="2024-02">Feb 2024 — March 2024</time>
 
-              <p class="timeline-text"> &#x2022; Answered calls and managed incoming inquiries.</p>
-              <p class="timeline-text"> &#x2022; Reported directly to a senior staff member.</p>
-              <p class="timeline-text"> &#x2022; Handled documentation and logged important information in the absence
+              <p class="timeline-text">• Answered calls and managed incoming inquiries.</p>
+              <p class="timeline-text">• Reported directly to a senior staff member.</p>
+              <p class="timeline-text">• Handled documentation and logged important information in the absence
                 of office personnel.</p>
 
             </li>
@@ -859,46 +747,46 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
           </div>
 
-          <ol class="timeline-list">
+          <ol class="timeline-list" role="list">
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
 
               <h4 class="h4 timeline-item-title">Life Choices Academy</h4>
 
-              <span>April 2024 - September 2024</span>
+              <time datetime="2024-04">April 2024 - September 2024</time>
 
               <p class="timeline-text"> Gained proficiency in various coding languages and frameworks, including:</p>
 
-              <p class="timeline-text"> &#x2022; HTML, CSS, JavaScript </p>
-              <p class="timeline-text"> &#x2022; Vue.js, Node.js, MySQL, and Bootstrap
+              <p class="timeline-text">• HTML, CSS, JavaScript </p>
+              <p class="timeline-text">• Vue.js, Node.js, MySQL, and Bootstrap
               </p>
               <br>
               <p class="timeline-text">Additionally, developed a strong foundation in:</p>
 
-              <p class="timeline-text"> &#x2022; Agile and Scrum methodologies.</p>
-              <p class="timeline-text"> &#x2022; Problem-solving, critical thinking, and teamwork.</p>
-              <p class="timeline-text"> &#x2022; Effective communication, time management, and adaptability in dynamic
+              <p class="timeline-text">• Agile and Scrum methodologies.</p>
+              <p class="timeline-text">• Problem-solving, critical thinking, and teamwork.</p>
+              <p class="timeline-text">• Effective communication, time management, and adaptability in dynamic
                 environment.</p>
 
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item" role="listitem">
 
               <h4 class="h4 timeline-item-title">Wynberg Boys' High School</h4>
 
-              <span>2019 — 2023</span>
+              <time datetime="2019">2019 — 2023</time>
 
-              <p class="timeline-text"> &#x2022; One of South Africa and Africa’s most prestigious schools.</p>
-              <p class="timeline-text"> &#x2022; Studied: Mathematics Literacy, English, Afrikaans, Engineering Graphics
+              <p class="timeline-text">• One of South Africa and Africa's most prestigious schools.</p>
+              <p class="timeline-text">• Studied: Mathematics Literacy, English, Afrikaans, Engineering Graphics
                 and Design (EGD), Life Sciences, and Visual Art.</p>
-              <p class="timeline-text"> &#x2022; Achieved a Bachelor’s Pass.</p>
-              <p class="timeline-text"> &#x2022; Awarded Western Province Colours, participated in Drama, and Choir.</p>
+              <p class="timeline-text">• Achieved a Bachelor's Pass.</p>
+              <p class="timeline-text">• Awarded Western Province Colours, participated in Drama, and Choir.</p>
             </li>
 
           </ol>
@@ -912,30 +800,30 @@
         - #PORTFOLIO/PROJECT
       -->
 
-      <article class="project" data-page="project">
+      <article class="project" data-page="project" role="tabpanel" aria-labelledby="projects-title">
 
         <header>
-          <h2 class="h2 article-title">Project</h2>
+          <h2 class="h2 article-title" id="projects-title">Projects</h2>
         </header>
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <ul class="filter-list" role="tablist" aria-label="Project filter">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+            <li class="filter-item" role="none">
+              <button class="active" data-filter-btn role="tab" aria-selected="true" aria-controls="project-grid">All</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+            <li class="filter-item" role="none">
+              <button data-filter-btn role="tab" aria-selected="false" aria-controls="project-grid">Web design</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+            <li class="filter-item" role="none">
+              <button data-filter-btn role="tab" aria-selected="false" aria-controls="project-grid">Applications</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+            <li class="filter-item" role="none">
+              <button data-filter-btn role="tab" aria-selected="false" aria-controls="project-grid">Web development</button>
             </li>
 
           </ul>
@@ -947,43 +835,43 @@
               <div class="select-value" data-selecct-value>Select category</div>
 
               <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
               </div>
 
             </button>
 
-            <ul class="select-list">
+            <ul class="select-list" role="listbox">
 
-              <li class="select-item">
-                <button data-select-item>All</button>
+              <li class="select-item" role="none">
+                <button data-select-item role="option">All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="select-item" role="none">
+                <button data-select-item role="option">Web design</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="select-item" role="none">
+                <button data-select-item role="option">Applications</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="select-item" role="none">
+                <button data-select-item role="option">Web development</button>
               </li>
 
             </ul>
 
           </div>
 
-          <ul class="project-list">
+          <ul class="project-list" id="project-grid" role="grid" aria-label="Project showcase">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://vueportfolio-fcad3.web.app/" target="_blank">
+            <li class="project-item active" data-filter-item data-category="web development" role="gridcell">
+              <a href="https://vueportfolio-fcad3.web.app/" target="_blank" rel="noopener noreferrer" aria-label="View Vue Portfolio project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
-                  <img src="./assets/images/VueJs_Portfolio.png" alt="finance" loading="lazy">
+                  <img src="./assets/images/projects/VueJs_Portfolio.png" alt="Vue.js Portfolio website screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">Vue Portfolio</h3>
@@ -993,15 +881,15 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://my-favourite-food.vercel.app/" target="_blank">
+            <li class="project-item active" data-filter-item data-category="web design" role="gridcell">
+              <a href="https://my-favourite-food.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View My Favourite Food project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/FavFood.png" alt="fundo" loading="lazy">
+                  <img src="./assets/images/projects/FavFood.png" alt="My Favourite Food website screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">My Favourite Food</h3>
@@ -1011,15 +899,15 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://todo-app-challenge-omega.vercel.app/" target="_blank">
+            <li class="project-item active" data-filter-item data-category="applications" role="gridcell">
+              <a href="https://todo-app-challenge-omega.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View To-do App project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/To-doApp.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/projects/To-doApp.png" alt="To-do App screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">To-do App</h3>
@@ -1028,15 +916,15 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://mardoquiero-dimbu-portfolio.vercel.app/#home" target="_blank">
+            <li class="project-item active" data-filter-item data-category="web design" role="gridcell">
+              <a href="https://mardoquiero-dimbu-portfolio.vercel.app/#home" target="_blank" rel="noopener noreferrer" aria-label="View Bootstrap Portfolio project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/1stPortfolio.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/projects/1stPortfolio.png" alt="Bootstrap Portfolio website screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">Bootstrap Portfolio</h3>
@@ -1045,15 +933,15 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://retroqueiro-inderc-onstruction.vercel.app/" target="_blank">
+            <li class="project-item active" data-filter-item data-category="applications" role="gridcell">
+              <a href="https://retroqueiro-inderc-onstruction.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Retro Queiro project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/RetroQueiro.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/projects/RetroQueiro.png" alt="Retro Queiro application screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">Retro Queiro</h3>
@@ -1062,15 +950,15 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://mardoquiero-dimbu-portfolio.vercel.app/#home" target="_blank">
+            <li class="project-item active" data-filter-item data-category="applications" role="gridcell">
+              <a href="https://github.com/Mardoqueiro" target="_blank" rel="noopener noreferrer" aria-label="View GitHub Portfolio">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Screenshot 2024-10-04 142146.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/projects/Screenshot 2024-10-04 142146.png" alt="GitHub Portfolio screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">Github Portfolio</h3>
@@ -1079,15 +967,15 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://jaymar-climbing-f140f.web.app/" target="_blank">
+            <li class="project-item active" data-filter-item data-category="web development" role="gridcell">
+              <a href="https://jaymar-climbing-f140f.web.app/" target="_blank" rel="noopener noreferrer" aria-label="View JayMar Climbing project">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/JayMar_Climbing.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/projects/JayMar_Climbing.png" alt="JayMar Climbing website screenshot" loading="lazy" width="300" height="200">
                 </figure>
 
                 <h3 class="project-title">JayMar Climbing</h3>
@@ -1107,37 +995,41 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact" role="tabpanel" aria-labelledby="contact-title">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" id="contact-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
+        <section class="mapbox" data-mapbox role="img" aria-label="Map showing location in Cape Town, South Africa">
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88444.38728953834!2d18.50770516487678!3d-33.90277808388773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5a5cb46e5bd5%3A0xb29f46122cdcbd13!2sParow%2C%20Cape%20Town!5e1!3m2!1sen!2sza!4v1728754484877!5m2!1sen!2sza"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade" title="Google Maps showing Cape Town location">
             </iframe>
+          </figure>
         </section>
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formspree.io/f/mvoeyzga" method="POST" class="form" data-form target="_blank">
+          <form action="https://formspree.io/f/mvoeyzga" method="POST" class="form" data-form target="_blank" novalidate>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <label for="fullname" class="sr-only">Full Name</label>
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input aria-describedby="fullname-error">
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <label for="email" class="sr-only">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required data-form-input aria-describedby="email-error">
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input aria-describedby="message-error"></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+            <button class="form-btn" type="submit" disabled data-form-btn aria-describedby="form-status">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
               <span>Send Message</span>
             </button>
 
@@ -1151,6 +1043,9 @@
     </div>
   </main>
 
+
+  <!-- Skip to main content link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!--
     - custom js link
